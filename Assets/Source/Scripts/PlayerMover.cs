@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-
 
 public class PlayerMover : MonoBehaviour
 {
@@ -40,23 +38,17 @@ public class PlayerMover : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && _isGrounded)
         {
-            Debug.Log("Spacebar pressed.");
-
-            _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _jumpForce);
-            Debug.Log("Jump");
+           _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _jumpForce);
         }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         _isGrounded = true;
-        Debug.Log(_isGrounded);
     }
 
     private void OnCollisionExit2D(Collision2D other)
     {
         _isGrounded = false;
-
-        Debug.Log(_isGrounded);
     }
 }
