@@ -122,7 +122,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d1ebdc7fbf61a24a98e6eea78e52c6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyMover: {fileID: 9169456129198333447}
 --- !u!114 &9169456129198333447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,8 +134,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5934dda2273714d428b3addeeb6a44b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _enemySprite: {fileID: 7894082156809052842}
   _waypoints: {fileID: 0}
+  _pauseTime: 3
   _moveSpeed: 2
+  _accuracyValue: 0.1
 --- !u!58 &6742099907656054918
 CircleCollider2D:
   m_ObjectHideFlags: 0
