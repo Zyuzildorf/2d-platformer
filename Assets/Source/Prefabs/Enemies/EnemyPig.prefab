@@ -15,6 +15,9 @@ GameObject:
   - component: {fileID: 9169456129198333447}
   - component: {fileID: 6742099907656054918}
   - component: {fileID: 7542112727130655140}
+  - component: {fileID: 6621217770840473487}
+  - component: {fileID: -5985275330850565991}
+  - component: {fileID: 2706729100602698734}
   m_Layer: 0
   m_Name: EnemyPig
   m_TagString: Untagged
@@ -134,11 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5934dda2273714d428b3addeeb6a44b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemySprite: {fileID: 7894082156809052842}
-  _waypoints: {fileID: 0}
-  _pauseTime: 3
   _moveSpeed: 2
-  _accuracyValue: 0.1
 --- !u!58 &6742099907656054918
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -201,3 +200,42 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &6621217770840473487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940238398751313122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cabae437d907d741b26c82fc67a23cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5985275330850565991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940238398751313122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da08141826b8fd5498d657557913e7d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _waypoints: {fileID: 0}
+  _pauseTime: 1
+  _accuracyValue: 0.1
+--- !u!114 &2706729100602698734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940238398751313122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92b8909f54ae224384e9c888ce8b358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

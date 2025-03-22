@@ -10,7 +10,7 @@ public class CoinsCollector : MonoBehaviour
         if (other.TryGetComponent(out Coin coin))
         {
             OnCoinCollected?.Invoke(coin.CoinValue);
-            Destroy(other.gameObject);
+            coin.CallEvent();
         }
     }
 }
